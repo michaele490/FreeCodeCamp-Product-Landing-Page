@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #f2eed8;
+  --secondary-color: #7babd4;
+  --border-primary-color: #595f63;
+  --header-font: Montserrat;
+  --paragraph-font: "Playfair Display";
+  --cta-font: "Source Sans 3";
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid #595f63;
+  background-color: var(--secondary-color);
+  margin-top: 0;
+}
+
+#header-img {
+  border-radius: 50px;
+  padding: 5px;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--cta-font);
+  font-size: 1.8rem;
+  color: #f5f9ff;
+  font-weight: 700;
+}
