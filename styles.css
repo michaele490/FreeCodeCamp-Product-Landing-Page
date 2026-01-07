@@ -64,3 +64,12 @@ header {
   font-weight: 800;
   text-decoration: underline;
 }
+
+main {
+  margin-top: 185px;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+}
