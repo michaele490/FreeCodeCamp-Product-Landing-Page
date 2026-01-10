@@ -52,7 +52,7 @@ p {
 
   h2 {
     font-size: 2.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   section {
@@ -63,6 +63,14 @@ p {
 
   p {
     font-size: 1.1rem;
+  }
+
+  .brand {
+    width: 350px;
+  }
+
+  .brand-logo {
+    width: 300px;
   }
 }
 
@@ -86,13 +94,12 @@ header {
 }
 
 #nav-links {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: var(--cta-font);
-  /*font-size: 1.8rem;*/
   color: #f5f9ff;
   font-weight: 700;
 }
@@ -122,10 +129,11 @@ section {
 #video {
   display: block;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 #about {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   background: linear-gradient(
     90deg,
     #75bdff,
@@ -140,4 +148,30 @@ section {
 #about p {
   text-align: center;
   font-weight: 480;
+}
+
+#video-suggestion {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+#our-clients {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 360px 360px;
+  row-gap: 15px;
+  border: 1px solid black;
+}
+
+.brand {
+  background-color: #fff;
+  border: 1px solid black;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
