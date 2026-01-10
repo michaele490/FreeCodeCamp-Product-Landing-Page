@@ -17,9 +17,13 @@ body {
   background-color: var(--primary-color);
 }
 
-h2 {
+h2, h3 {
   font-family: var(--header-font);
   text-align: center;
+}
+
+.prod-process h3 {
+  font-weight: 500;
 }
 
 p {
@@ -138,6 +142,35 @@ section {
   height: 230px;
 }
 
+#process {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  row-gap: 12px;
+}
+
+.prod-process {
+  background-color: #fff;
+  border: 1px solid #22156e;
+}
+
+.prod-process p {
+  font-size: 1rem;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.prod-process hr {
+  /*width: 70%;*/
+  margin-top: 1px;
+  margin-bottom: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media screen and (max-width: 600px) {
   #nav-links {
     min-width: 70%;
@@ -147,6 +180,10 @@ section {
   h2 {
     font-size: 2.2rem;
     margin-bottom: 1.1rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
   }
 
   #our-clients {
@@ -167,6 +204,10 @@ section {
     width: 375px;
     height: 211px;
   }
+
+  .prod-process hr {
+    width: 98%;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -183,6 +224,10 @@ section {
     font-size: 2.4rem;
     margin-bottom: 1.1rem;
   }
+
+  h3 {
+    font-size: 1.4rem;
+  }
   
   p {
     font-size: 1rem;
@@ -191,6 +236,10 @@ section {
   #video {
     width: 450px;
     height: 254px;
+  }
+
+  .prod-process hr {
+    width: 90%;
   }
 }
 
@@ -205,6 +254,10 @@ section {
     margin-bottom: 1.3rem;
   }
 
+  h3 {
+    font-size: 1.6rem;
+  }
+
   .brand {
     width: 220px;
   }
@@ -217,6 +270,10 @@ section {
     width: 500px;
     height: 282px;
   }
+
+  .prod-process hr {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -228,6 +285,10 @@ section {
   h2 {
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
   }
 
   /*section {
