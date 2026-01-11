@@ -271,6 +271,11 @@ input {
   .prod-process hr {
     width: 98%;
   }
+
+  #form {
+    display: grid;
+    grid-template-columns: 90%;
+  }
 }
 
 @media screen and (min-width: 600px) {
