@@ -30,7 +30,7 @@ p {
   font-family: var(--paragraph-font);
 }
 
-#navbar {
+#nav-bar {
   display: flex;
   justify-content: space-around;
 }

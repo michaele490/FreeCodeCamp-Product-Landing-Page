@@ -16,8 +16,8 @@
 
 <body>
   <header id="header">
-    <nav id="navbar">
-      <a href="index.html" class="nav-link">
+    <nav id="nav-bar">
+      <a href="index.html">
       <img
         src="https://res.cloudinary.com/di9ecjkk8/image/upload/v1767609266/AAG-Logo_qxa8mh.png"
         alt="Apex Apparell Logo"
@@ -197,12 +197,13 @@
     <section id="pricing">
       <h2>Pricing</h2>
       <p id="signup-prompt">Sign up for a free consultation to get a quote</p>
-      <form id="form">
+      <form id="form" method="post" action="https://www.freecodecamp.org/email-submit">
         <div class="form-pair">
           <label for="email">Email</label>
           <input
             id="email"
             type="email"
+            name="email"
             placeholder="brand_name@outlook.com"
           />
         </div>
@@ -229,7 +230,7 @@
 
         <div class="form-pair submit-button">
           <label id="hidden-label">Hidden Label</label>
-          <input id="submit" type="submit">
+          <input id="submit" type="submit" value="submit">
         </div>
       </form>
     </section>
