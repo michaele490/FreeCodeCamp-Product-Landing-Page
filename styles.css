@@ -110,13 +110,14 @@ section {
   font-weight: 480;
 }
 
-#video-suggestion {
+#video-suggestion, #signup-prompt {
   text-align: center;
   font-weight: 500;
   font-size: 1.5rem;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 25px;
+  font-family: var(--cta-font);
 }
 
 #our-clients {
@@ -130,7 +131,7 @@ section {
 .brand {
   background-color: #fff;
   border: 1px solid black;
-  height: 310px;
+  height: 275px;
   /*width: 250px;  Add a fixed width to each brand container */
   display: flex;
   justify-content: center;
@@ -171,19 +172,81 @@ section {
   margin-left: auto;
 }
 
+#form {
+  background-color: #f5faf9;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin: 1px;
+  font-family: var(--paragraph-font);
+  font-size: 1.2rem;
+}
+
+input {
+  border-radius: 5px;
+  height: 35px;
+  width: 250px;
+  font-size: 1rem;
+  padding: 2.5px;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+}
+
+#submit {
+  /*background-color: #7babd4;*/
+  border-radius: 0;
+  background-color: var(--secondary-color);
+  font-family: var(--cta-font);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#hidden-label {
+  visibility: hidden;
+}
+
+.form-pair {
+  /*border: 1px solid navy;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  #process {
+    display: grid;
+    grid-template-columns: 94%;
+    gap: 10px;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  header {
+    overflow: auto;
+  }
+
   #nav-links {
-    min-width: 70%;
+    min-width: 315px;
     font-size: 1rem;
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 1.1rem;
   }
 
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   #our-clients {
@@ -308,5 +371,11 @@ section {
   #video {
     width: 560px;
     height: 315px;
+  }
+
+  #form {
+    width: 820px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
